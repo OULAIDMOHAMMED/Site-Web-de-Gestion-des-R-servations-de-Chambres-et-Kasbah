@@ -1,0 +1,112 @@
+
+.sign-form {
+    width: clamp(315px,60%,400px);
+    height: clamp(470px,50%,500px);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: roboto, poppins;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+    animation: 1s ;
+    z-index: 999;
+    display: none;
+    
+}
+@keyframes fadein{
+    0%{
+        top: 60%;
+        opacity: 0;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
+.login{
+    width: clamp(300px,50%,400px);
+    height: clamp(300px,50%,500px);
+}
+
+.signup_form {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.signup_form input {
+    width: 100%;
+    border: none;
+    height: 2.4em;
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    outline:none;
+    
+    transition: .17s ease-in-out;
+}
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input~label {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transition: .17s ease-in-out ;
+}
+.signup_form input:hover,
+.signup_form input:focus
+{
+    border-bottom-color: rgb(0, 140, 255);
+}
+.signup_form input:hover~label,
+.signup_form input:focus~label,
+.signup_form input:valid~label{
+    top: -50%;
+    font-size: .8em;
+    color:rgb(0, 140, 255);
+}
+.submit_button{
+    width: 80%;
+    font-size: 1.15em;
+    height: 2.3em;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: rgb(43, 230, 158);
+    cursor: pointer;
+    border: none;
+    transition: .12s ease-in-out;
+}
+.submit_button:hover{
+    background-color: rgb(29, 201, 129);
+}
+#close_signup,#close_login{
+    position: absolute;
+    left: 100%;
+    border: none;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.4em;
+    border-radius: 100%;
+    top: -5%;
+    color: rgb(92, 91, 91);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#close_signup:hover,
+#close_login:hover{
+    color: black;
+}
+
+
+
+
