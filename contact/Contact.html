@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <script src="https://kit.fontawesome.com/f7e2b56c18.js" crossorigin="anonymous"></script>
+    <title>contact</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <h2>MBik</h2>
+        </div>
+        <div id="links">
+            <div class="link"><a href="../index.php" id="home">Home</a>
+                <hr>
+            </div>
+            <div class="link"><a href="" id="contact">Contact</a>
+                <hr>
+            </div>
+            <i class="fa fa-globe"></i>
+            <div id="nav-menu">
+                <button id="nav-menu-button" onclick="show()"><i class="fa-regular fa-user icon" style="font-size: 1.6em;"></i>
+                    <i class="fa fa-bars icon"></i></button>
+                <div class="profile-items" id="waa">
+                    
+                        <a href="..\becom_host\hosting_survey.html">List your Property</a>
+                        <hr>
+                        <a href="#">About Us</a>
+                        <hr>
+                        <a href="..\index.php" id="logout">Logout</a>
+                        <hr>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="form-container">
+        <form class="form" action="send_email.php" method="post" id="contact-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">How Can We Help You?</label>
+                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="button">
+                <button class="form-submit-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="../showMenu.js"></script>
+</body>
+
+</html>
